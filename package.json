@@ -1,0 +1,34 @@
+{
+  "name": "express-cache-toolkit",
+  "version": "1.0.0",
+  "description": "A small in-memory JSON response cache for Express 4 and 5.",
+  "license": "MIT",
+  "author": "loopedlogic",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.cjs",
+    "index.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "express": ">=4.18.0 <6"
+  },
+  "devDependencies": {
+    "express": "^5.2.1"
+  }
+}
